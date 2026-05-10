@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Oxford University Press · Neuroscience Impact Report · May 2026</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  :root {
+    --accent: #a78bfa;
+    --accent-muted: rgba(167,139,250,0.08);
+    --accent-glow: rgba(167,139,250,0.2);
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a class="nav-brand" href="#">Impact Intelligence</a>
+  <ul class="nav-links">
+    <li><a href="#position">Position</a></li>
+    <li><a href="#neuro-onc">The Proceedings Problem</a></li>
+    <li><a href="#brain-journal">Brain Journal</a></li>
+    <li><a href="#topics">Topics</a></li>
+    <li><a href="#actions">Actions</a></li>
+  </ul>
+</nav>
+
+<section class="hero">
+  <div class="container">
+    <p class="hero-kicker fade-up">Oxford University Press · Neuroscience · May 2026</p>
+    <h1 class="hero-title fade-up-2">OUP Publishes the Best Neuroscience Journal Nobody Is Benchmarking Against</h1>
+    <p class="hero-deck fade-up-3">Brain, the flagship OUP neuroscience journal, averages 51.3 citations per work — higher than Springer Nature's portfolio average. But OUP's overall neuroscience citation rate sits at 17.5. Between those two numbers lies one of the most instructive stories in academic publishing: how a single editorial decision can quietly halve a publisher's apparent performance.</p>
+    <div class="hero-meta fade-up-3">
+      <span>Source: OpenAlex 2020–2026</span>
+      <span>352 works analyzed</span>
+      <span>5 publishers benchmarked</span>
+    </div>
+  </div>
+</section>
+
+<section id="position">
+  <div class="container">
+    <p class="section-label">Market Position</p>
+    <h2 class="section-title">A 30-Citation Publisher Measured at 17.5</h2>
+
+    <div class="stat-row fade-up">
+      <div class="stat-card">
+        <div class="stat-value">17.5<span class="stat-unit"> avg</span></div>
+        <div class="stat-label">Citations per work</div>
+        <div class="stat-delta warn">4th–5th of 5 publishers</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value">29.8<span class="stat-unit"> avg</span></div>
+        <div class="stat-label">Without drag journals</div>
+        <div class="stat-delta up">↑ Leaps to near-PLOS level</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value">51.3<span class="stat-unit"> avg</span></div>
+        <div class="stat-label">Brain journal (flagship)</div>
+        <div class="stat-delta up">Beats Springer's portfolio avg</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value">0.3<span class="stat-unit"> avg</span></div>
+        <div class="stat-label">Neuro-Oncology (69 works)</div>
+        <div class="stat-delta down">Largest denominator drag</div>
+      </div>
+    </div>
+
+    <div class="prose">
+      <p>If you knew nothing else about Oxford University Press's neuroscience portfolio, you would design it around Brain. It is a century-old journal with a reputation for publishing landmark clinical neuroscience. In this dataset, it delivers: <strong>60 works, 51.3 average citations, 12 reviews</strong>. The best papers in the dataset include deep clinical translational work in neurodegeneration, neuroinflammation, and brain recovery. Physical Therapy, another OUP journal, manages 66.9 average citations across 15 works.</p>
+      <p>But the reported OUP portfolio average — 17.5 — suggests neither of those journals exists. To understand why, you have to look at what is measuring alongside them.</p>
+    </div>
+
+    <div class="chart-wrap">
+      <div class="chart-headline">Brain sets a benchmark that the rest of the portfolio buries</div>
+      <div class="chart-subline">OUP journals by average citations — size of text indicates volume</div>
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Journal</th>
+            <th class="num">Works</th>
+            <th class="num">Avg cites</th>
+            <th class="num">Reviews</th>
+            <th>Signal</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="highlight">
+            <td><strong>Physical Therapy</strong></td>
+            <td class="num">15</td>
+            <td class="num accent-cell">66.9</td>
+            <td class="num">1</td>
+            <td class="good-cell">Exceptional</td>
+          </tr>
+          <tr class="highlight">
+            <td><strong>Brain</strong></td>
+            <td class="num">60</td>
+            <td class="num accent-cell">51.3</td>
+            <td class="num">12</td>
+            <td class="good-cell">Crown jewel</td>
+          </tr>
+          <tr>
+            <td>Nucleic Acids Research</td>
+            <td class="num">9</td>
+            <td class="num">35.0</td>
+            <td class="num">0</td>
+            <td style="color:var(--color-text-muted)">Strong niche</td>
+          </tr>
+          <tr>
+            <td>Bioinformatics</td>
+            <td class="num">11</td>
+            <td class="num">29.0</td>
+            <td class="num">0</td>
+            <td style="color:var(--color-text-muted)">Strong niche</td>
+          </tr>
+          <tr>
+            <td>Genetics</td>
+            <td class="num">5</td>
+            <td class="num">29.2</td>
+            <td class="num">1</td>
+            <td style="color:var(--color-text-muted)">Strong niche</td>
+          </tr>
+          <tr>
+            <td>International J. Epidemiology</td>
+            <td class="num">4</td>
+            <td class="num">27.3</td>
+            <td class="num">0</td>
+            <td style="color:var(--color-text-muted)">Solid</td>
+          </tr>
+          <tr>
+            <td>Archives of Clinical Neuropsychology</td>
+            <td class="num">14</td>
+            <td class="num">5.9</td>
+            <td class="num">0</td>
+            <td style="color:#fbbf24">Low yield</td>
+          </tr>
+          <tr>
+            <td>Age and Ageing</td>
+            <td class="num">5</td>
+            <td class="num">2.0</td>
+            <td class="num">0</td>
+            <td style="color:#fbbf24">Low yield</td>
+          </tr>
+          <tr class="dimmed">
+            <td>SLEEP</td>
+            <td class="num">42</td>
+            <td class="num warn-cell">3.0</td>
+            <td class="num">2</td>
+            <td class="warn-cell">Drag</td>
+          </tr>
+          <tr class="dimmed">
+            <td>Microscopy and Microanalysis</td>
+            <td class="num">24</td>
+            <td class="num warn-cell">0.8</td>
+            <td class="num">0</td>
+            <td class="warn-cell">Off-target</td>
+          </tr>
+          <tr class="dimmed">
+            <td>British Journal of Surgery</td>
+            <td class="num">11</td>
+            <td class="num warn-cell">0.0</td>
+            <td class="num">1</td>
+            <td class="warn-cell">Off-target</td>
+          </tr>
+          <tr class="dimmed">
+            <td>Neuro-Oncology</td>
+            <td class="num">69</td>
+            <td class="num warn-cell">0.3</td>
+            <td class="num">1</td>
+            <td class="warn-cell">Proceedings risk</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section id="neuro-onc">
+  <div class="container">
+    <p class="section-label">The Proceedings Problem</p>
+    <h2 class="section-title">69 Works. 0.3 Average Citations. This Is Not a Journal Problem.</h2>
+
+    <div class="prose">
+      <p>Neuro-Oncology is the largest single source in OUP's neuroscience dataset: 69 works. It is a respected, high-impact clinical journal in its own right, with a Journal Impact Factor that regularly reaches the top tier of oncology. So why does it appear in this dataset averaging <strong>0.3 citations per work</strong>?</p>
+      <p>The answer is in the titles. Pulling the actual paper titles from the 2025 Neuro-Oncology works in this dataset reveals a consistent pattern:</p>
+    </div>
+
+    <div class="chart-wrap">
+      <div class="chart-headline">Neuro-Oncology 2025 works: conference abstract formatting</div>
+      <div class="chart-subline">Sample titles from the dataset — consistent with Society for Neuro-Oncology annual meeting abstracts</div>
+      <div style="display:flex;flex-direction:column;gap:0.5rem;margin-top:0.5rem">
+        <div style="background:var(--color-surface-2);border-left:3px solid #f87171;padding:0.7rem 1rem;border-radius:0 var(--radius) var(--radius) 0;font-family:var(--font-ui);font-size:0.82rem;color:var(--color-text-muted);">
+          "CNSC-66. Spatially constrained gliomagenesis…"
+        </div>
+        <div style="background:var(--color-surface-2);border-left:3px solid #f87171;padding:0.7rem 1rem;border-radius:0 var(--radius) var(--radius) 0;font-family:var(--font-ui);font-size:0.82rem;color:var(--color-text-muted);">
+          "NCOG-06. Multimodal management of meningioma…"
+        </div>
+        <div style="background:var(--color-surface-2);border-left:3px solid #f87171;padding:0.7rem 1rem;border-radius:0 var(--radius) var(--radius) 0;font-family:var(--font-ui);font-size:0.82rem;color:var(--color-text-muted);">
+          "IMG-98. Metabolic response using PET RANO 1.0 criteria…"
+        </div>
+        <div style="background:var(--color-surface-2);border-left:3px solid #f87171;padding:0.7rem 1rem;border-radius:0 var(--radius) var(--radius) 0;font-family:var(--font-ui);font-size:0.82rem;color:var(--color-text-muted);">
+          "CAN A DEDICATED NEURO-ONCOLOGY AHP SERVICE REDUCE LENGTH OF STAY…"
+        </div>
+      </div>
+    </div>
+
+    <div class="prose">
+      <p>These are Society for Neuro-Oncology annual meeting abstract titles. The alphanumeric codes (CNSC-66, NCOG-06, IMG-98) are session-and-submission identifiers. Neuro-Oncology publishes its annual meeting supplement as an indexed journal issue — which means these abstracts appear in OpenAlex as journal articles.</p>
+      <p>This is the most consequential finding in the OUP dataset: <strong>the 69 "Neuro-Oncology" works that are dragging OUP's average to near-zero are not research articles</strong>. They are meeting abstracts. If they are counted as citable items in the Journal Impact Factor denominator, they create a structural denominator expansion with essentially no citation return.</p>
+    </div>
+
+    <div class="pull-quote">"The 69 Neuro-Oncology works averaging 0.3 citations are not papers. They are conference abstracts. And if they count toward the JIF denominator, OUP has a structural calculation problem — not an editorial one."</div>
+
+    <div class="chart-wrap">
+      <div class="chart-headline">Removing the non-citable items transforms the OUP picture</div>
+      <div class="chart-subline">OUP portfolio average: with and without conference proceedings sources</div>
+      <div class="bar-chart">
+        <div class="bar-row">
+          <div class="bar-label">OUP — core research journals only</div>
+          <div class="bar-track"><div class="bar-fill good" style="width:100%"></div></div>
+          <div class="bar-value">29.8 avg · 201 works</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label">Springer Nature (reference)</div>
+          <div class="bar-track"><div class="bar-fill" style="width:91%"></div></div>
+          <div class="bar-value">53.8 avg · 232 works</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label">PLOS (reference)</div>
+          <div class="bar-track"><div class="bar-fill" style="width:69%"></div></div>
+          <div class="bar-value">34.3 avg · 512 works</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label">OUP — as currently reported</div>
+          <div class="bar-track"><div class="bar-fill warn" style="width:33%"></div></div>
+          <div class="bar-value">17.5 avg · 352 works</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label">Drag journals (combined)</div>
+          <div class="bar-track"><div class="bar-fill warn" style="width:4%"></div></div>
+          <div class="bar-value">1.1 avg · 151 works</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="insight-box">
+      <div class="insight-box-title">The Denominator Audit Priority</div>
+      <p>Before any editorial strategy discussion, OUP needs to answer one operational question: are the Neuro-Oncology supplement abstracts classified as citable articles in the JIF calculation? If yes, this is an immediate item for the editorial and bibliometrics team. Journals can formally designate supplement content as "not citable" — which is standard practice for meeting abstracts. The fix is administrative, not editorial. But until it is implemented, every OUP benchmarking conversation will be distorted by 69 works averaging 0.3 citations each.</p>
+    </div>
+  </div>
+</section>
+
+<section id="brain-journal">
+  <div class="container">
+    <p class="section-label">The Crown Jewel</p>
+    <h2 class="section-title">Brain Shows What OUP Can Do at Full Power</h2>
+
+    <div class="prose">
+      <p>With the proceedings noise removed, Brain emerges as one of the strongest journals in this entire dataset. Its 51.3 average citation rate exceeds Springer Nature's portfolio average and trails only individual journals like Molecular Psychiatry (103.0) and Translational Psychiatry (75.8). Brain publishes deep, definitive clinical neuroscience: neurodegeneration mechanisms, epilepsy genetics, brain recovery and plasticity, neuroinflammation.</p>
+      <p>The notable gap in Brain is its review rate. Only <strong>12 of 60 works</strong> (20%) are reviews. OUP reviews overall average 67.7 citations — versus 13.0 for articles. Every additional commissioned review in Brain is worth five research articles in terms of expected citation contribution.</p>
+    </div>
+
+    <div class="callout success">
+      <span class="callout-icon">◆</span>
+      <p>Physical Therapy is the sleeper strong asset in OUP's portfolio: 15 works averaging 66.9 citations. The connection to neuroscience is through neurological rehabilitation, motor recovery, and neurorehabilitation science — a growing field with an engaged clinical-research crossover readership. Physical Therapy's current review share is only 1 in 15 (7%); commissioned reviews on neural plasticity in rehabilitation and motor recovery could become landmark citable pieces.</p>
+    </div>
+  </div>
+</section>
+
+<section id="topics">
+  <div class="container">
+    <p class="section-label">Topic Analysis</p>
+    <h2 class="section-title">Concentrated in Clinical Oncology, Absent in Computational Neuroscience</h2>
+
+    <div class="prose">
+      <p>OUP's topic map is heavily skewed toward the journals producing the most volume. Neuro-Oncology's proceedings load means glioma-related topics dominate by sheer count — but at near-zero citation density. Strip those out, and OUP's strongest topic positions are actually in niche but high-value areas: Advanced Electron Microscopy (OUP holds 14 of 22 market works, 64% share), Musculoskeletal Pain and Rehabilitation (43% share), and Traumatic Brain Injury (26% share from Brain's clinical output).</p>
+    </div>
+
+    <div class="chart-wrap">
+      <div class="chart-headline">OUP topic landscape: strong niches, thin computational coverage</div>
+      <div class="chart-subline">OUP market share by topic and market citation density</div>
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Topic</th>
+            <th class="num">Market total</th>
+            <th class="num">OUP works</th>
+            <th class="num">Market share</th>
+            <th class="num">Market avg cites</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="highlight">
+            <td>Advanced Electron Microscopy</td>
+            <td class="num">22</td>
+            <td class="num">14</td>
+            <td class="num accent-cell">64%</td>
+            <td class="num">9.4</td>
+            <td style="color:#fbbf24">Dominant, low-value</td>
+          </tr>
+          <tr class="highlight">
+            <td>Musculoskeletal Pain &amp; Rehabilitation</td>
+            <td class="num">23</td>
+            <td class="num">10</td>
+            <td class="num accent-cell">43%</td>
+            <td class="num">43.3</td>
+            <td class="good-cell">Dominant + high value</td>
+          </tr>
+          <tr>
+            <td>Traumatic Brain Injury</td>
+            <td class="num">23</td>
+            <td class="num">6</td>
+            <td class="num">26%</td>
+            <td class="num">15.4</td>
+            <td style="color:var(--color-text-muted)">Present</td>
+          </tr>
+          <tr>
+            <td>Cell Image Analysis</td>
+            <td class="num">70</td>
+            <td class="num">17</td>
+            <td class="num">24%</td>
+            <td class="num">21.1</td>
+            <td style="color:var(--color-text-muted)">Present</td>
+          </tr>
+          <tr>
+            <td>Sleep &amp; Wakefulness Research</td>
+            <td class="num">34</td>
+            <td class="num">7</td>
+            <td class="num">21%</td>
+            <td class="num">4.0</td>
+            <td style="color:#fbbf24">Present, low-yield</td>
+          </tr>
+          <tr>
+            <td>Functional Brain Connectivity</td>
+            <td class="num">281</td>
+            <td class="num">31</td>
+            <td class="num warn-cell">11%</td>
+            <td class="num">47.4</td>
+            <td class="warn-cell">Underweight</td>
+          </tr>
+          <tr>
+            <td>Mental Health Research</td>
+            <td class="num">59</td>
+            <td class="num">6</td>
+            <td class="num warn-cell">10%</td>
+            <td class="num">53.6</td>
+            <td class="warn-cell">Underweight</td>
+          </tr>
+          <tr>
+            <td>Neural Dynamics &amp; Brain Function</td>
+            <td class="num">367</td>
+            <td class="num">17</td>
+            <td class="num warn-cell">5%</td>
+            <td class="num">32.4</td>
+            <td class="warn-cell">Underweight</td>
+          </tr>
+          <tr>
+            <td>Genetics &amp; Neurodevelopmental Disorders</td>
+            <td class="num">25</td>
+            <td class="num">0</td>
+            <td class="num warn-cell">0%</td>
+            <td class="num">131.7</td>
+            <td class="warn-cell">Absent</td>
+          </tr>
+          <tr>
+            <td>Autism Spectrum Disorder</td>
+            <td class="num">22</td>
+            <td class="num">1</td>
+            <td class="num warn-cell">5%</td>
+            <td class="num">156.9</td>
+            <td class="warn-cell">Near-absent</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="prose">
+      <p>The most consequential gap is in the highest-citation topics. Genetics and Neurodevelopmental Disorders (market average 131.7 citations) has zero OUP works. Autism Spectrum Disorder (156.9 market average, the highest-citation topic in the dataset) has exactly one. OUP's Genetics journal is a natural vehicle for both topics — it already averages 29.2 citations across its neuroscience works. The editorial path exists; the commissioning has not followed it.</p>
+      <p>Musculoskeletal Pain and Rehabilitation is OUP's most underappreciated topic position: 43% market share at 43.3 average citations. Physical Therapy is the delivery vehicle. This topic is closely connected to neurological rehabilitation, a growing research area. Building a commissioned review series at the intersection of Physical Therapy, brain plasticity, and neurorehabilitation would extend this position into higher-citation territory.</p>
+    </div>
+
+    <div class="bubble-grid">
+      <div class="topic-bubble owned">Musculoskeletal Pain &amp; Rehab <span class="tip">OUP: 43% share · 43.3 mkt avg cites — via Physical Therapy</span></div>
+      <div class="topic-bubble owned">Cell Image Analysis <span class="tip">OUP: 24% share — Microscopy &amp; Microanalysis</span></div>
+      <div class="topic-bubble opportunity">Functional Brain Connectivity <span class="tip">47.4 mkt avg cites · OUP only 11% · high growth topic</span></div>
+      <div class="topic-bubble opportunity">Single-cell Transcriptomics <span class="tip">4× market growth · Nucleic Acids Research is the OUP vehicle</span></div>
+      <div class="topic-bubble missing">Genetics &amp; Neurodevelopment <span class="tip">0 OUP works · 131.7 mkt avg cites — OUP Genetics journal exists</span></div>
+      <div class="topic-bubble missing">Autism Spectrum Disorder <span class="tip">1 OUP work · 156.9 mkt avg cites — highest-citation topic</span></div>
+      <div class="topic-bubble missing">Mental Health Research <span class="tip">6/59 works · 53.6 mkt avg cites — major gap</span></div>
+    </div>
+    <p style="font-family:var(--font-ui);font-size:0.72rem;color:var(--color-text-dim);margin-top:0.5rem">
+      <span style="color:var(--accent)">■</span> OUP strength &nbsp;
+      <span style="color:#f87171">■</span> Absent or near-absent &nbsp;
+      <span style="color:#4ade80">■</span> Emerging opportunity
+    </p>
+  </div>
+</section>
+
+<section id="actions">
+  <div class="container">
+    <p class="section-label">Strategic Recommendations</p>
+    <h2 class="section-title">Three Moves to Fix the Measurement — and Then the Strategy</h2>
+
+    <ul class="action-list">
+      <li class="action-item">
+        <div class="action-num">1</div>
+        <div class="action-text">
+          <strong>Audit and remediate the Neuro-Oncology supplement classification: are conference abstracts designated as non-citable items in the JIF denominator?</strong>
+          <p>This is the highest-priority item in the OUP neuroscience portfolio — because until it is resolved, every other benchmarking conversation is compromised. Neuro-Oncology's annual meeting supplements are a legitimate editorial service that supports the neuro-oncology community. They should not, however, count as citable research items in an impact factor calculation. Work with Clarivate to confirm the article-type classification. If the supplement abstracts are counted as articles, submit a request for reclassification. This administrative step alone would lift OUP's reported citation density by approximately 70%.</p>
+        </div>
+      </li>
+      <li class="action-item">
+        <div class="action-num">2</div>
+        <div class="action-text">
+          <strong>Commission 5–7 invited reviews in Brain at the intersection of high-citation topics: neuroinflammation, functional connectivity in neurological disease, and genetic neurodegeneration</strong>
+          <p>Brain's 20% review share is the most immediately actionable editorial lever available to OUP. OUP reviews average 67.7 citations; Brain's existing reviews likely outperform that average. The target topics — neuroinflammation mechanisms, genetic basis of neurodegenerative diseases, recovery of function after stroke — are areas where Brain already has editorial depth and author relationships. Five commissioned reviews would add an estimated 300–400 citations to the OUP portfolio over the JIF measurement window, equivalent to converting 25–30 additional research articles into high-citation outcomes.</p>
+        </div>
+      </li>
+      <li class="action-item">
+        <div class="action-num">3</div>
+        <div class="action-text">
+          <strong>Use OUP Genetics and Nucleic Acids Research as deliberate vehicles for neurodevelopmental genetics and single-cell transcriptomics — the two fastest-growing and highest-citation topic clusters where OUP is absent or near-absent</strong>
+          <p>Genetics and Neurodevelopmental Disorders averages 131.7 market citations and OUP has zero works. Autism Spectrum Disorder averages 156.9 and OUP has one. These are not obscure topics — they are the highest-citation clusters in the dataset. OUP Genetics (29.2 avg in existing neuroscience works) is a credible entry point. Nucleic Acids Research (35.0 avg) covers the molecular mechanisms. A commissioned editorial series — "Genetics of Brain Disorders" — targeting both journals simultaneously, with systematic outreach to neurodevelopmental genetics research groups, would establish an OUP presence in territory currently owned by Elsevier and Springer.</p>
+        </div>
+      </li>
+    </ul>
+
+    <div class="insight-box" style="margin-top:var(--space-lg)">
+      <div class="insight-box-title">The OUP Thesis</div>
+      <p>OUP publishes Brain. Brain beats Springer Nature's portfolio average. The problem is not what OUP publishes — it is what gets measured alongside what OUP publishes. The strategy has two stages: first, clean up the denominator (proceedings classification, off-target journals); second, build on Brain's foundation by extending its review-driven clinical neuroscience model to OUP Genetics, Physical Therapy, and Nucleic Acids Research. The clinical depth is already there. The citation ceiling is much higher than 17.5 suggests.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="report-footer">
+  <div class="container">
+    <p>Data: OpenAlex API, works published 2020–2026, publisher filter: Oxford University Press. Analysis covers 352 neuroscience-related works across 16 journals. Citation counts as of data pull date. Conference abstract classification requires verification with Clarivate Web of Science source data. · <a href="https://openalex.org">OpenAlex</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wiley · Neuroscience Impact Report · May 2026</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  :root {
+    --accent: #60a5fa;
+    --accent-muted: rgba(96,165,250,0.08);
+    --accent-glow: rgba(96,165,250,0.2);
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a class="nav-brand" href="#">Impact Intelligence</a>
+  <ul class="nav-links">
+    <li><a href="#position">Position</a></li>
+    <li><a href="#paradox">Volume Paradox</a></li>
+    <li><a href="#stars">Hidden Stars</a></li>
+    <li><a href="#topics">Topics</a></li>
+    <li><a href="#actions">Actions</a></li>
+  </ul>
+</nav>
+
+<section class="hero">
+  <div class="container">
+    <p class="hero-kicker fade-up">Wiley · Neuroscience · May 2026</p>
+    <h1 class="hero-title fade-up-2">The Publisher With Five Excellent Journals and 900 Papers Hiding Them</h1>
+    <p class="hero-deck fade-up-3">Wiley publishes more neuroscience papers than any other publisher in this dataset. Nearly four times as many as Springer Nature. This should be a strength. Instead, it is the single biggest constraint on Wiley's citation performance — and the reason a portfolio with Annals of Neurology and Epilepsia inside it averages only 17 citations per work.</p>
+    <div class="hero-meta fade-up-3">
+      <span>Source: OpenAlex 2020–2026</span>
+      <span>929 works analyzed</span>
+      <span>5 publishers benchmarked</span>
+    </div>
+  </div>
+</section>
+
+<section id="position">
+  <div class="container">
+    <p class="section-label">Market Position</p>
+    <h2 class="section-title">Most Volume. Middle Citations.</h2>
+
+    <div class="stat-row fade-up">
+      <div class="stat-card">
+        <div class="stat-value">929</div>
+        <div class="stat-label">Neuroscience works</div>
+        <div class="stat-delta up">↑ Most of 5 publishers (4× Springer)</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value">17.0<span class="stat-unit"> avg</span></div>
+        <div class="stat-label">Citations per work</div>
+        <div class="stat-delta warn">↓ 5th of 5 publishers</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value">63.1<span class="stat-unit"> avg</span></div>
+        <div class="stat-label">Citations per review</div>
+        <div class="stat-delta up">Strong when deployed</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value">85<span class="stat-unit">%</span></div>
+        <div class="stat-label">Dementia topic market share</div>
+        <div class="stat-delta down">Dominated — but at 9.2 avg</div>
+      </div>
+    </div>
+
+    <div class="prose">
+      <p>Consider a thought experiment. Take five Wiley journals — Annals of Neurology, British Journal of Pharmacology, Epilepsia, Angewandte Chemie International Edition, and the Journal of Comparative Neurology. Isolate them. Calculate their average citation rate. The result: approximately <strong>48 citations per work</strong>. That hypothetical publisher would rank between PLOS and Springer Nature — the second or third most-cited neuroscience publisher in this dataset.</p>
+      <p>Now add the other 880 papers. Watch the average fall from 48 to 17.</p>
+      <p>This is the Wiley paradox. It is the publisher with the most papers and the least apparent impact — despite containing some of the best-performing journals in the entire dataset. The question is not whether Wiley can improve. It is how to stop an excellent core from being statistically invisible inside its own portfolio.</p>
+    </div>
+  </div>
+</section>
+
+<section id="paradox">
+  <div class="container">
+    <p class="section-label">The Volume Paradox</p>
+    <h2 class="section-title">85% of the Dementia Market. 9.2 Citations Per Paper.</h2>
+
+    <div class="prose">
+      <p>The most striking number in the Wiley dataset is its market share in Dementia and Cognitive Impairment Research: <strong>110 of 130 works across all five publishers</strong> — a commanding 85% share. Wiley essentially owns this topic. And the topic averages <strong>9.2 citations per work</strong> across the market.</p>
+      <p>That is not a terrible citation rate in isolation. But when 110 papers averaging 9.2 citations sit inside a portfolio of 929 total works, they contribute 1,012 citations to the numerator while consuming 12% of the denominator. Meanwhile, a single Annals of Neurology review — there are 4 of them — might generate 100+ citations on its own.</p>
+      <p>The dynamic compounds with Alzheimer's disease research, where Wiley holds 62 of 73 market works (also ~85% share). Together, these two topic clusters — essentially, Wiley's Alzheimer's &amp; Dementia journal and related sources — add a massive volume of denominator with modest citation return.</p>
+    </div>
+
+    <div class="pull-quote">"Wiley owns 85% of the dementia research market in this dataset. But market dominance in a low-citation topic does not compound: it dilutes. More Alzheimer's papers at 9.2 average is not a strategy. It is a drag."</div>
+
+    <div class="chart-wrap">
+      <div class="chart-headline">Wiley's volume advantage becomes a citation disadvantage</div>
+      <div class="chart-subline">Topic market share (%) vs. market avg citation density, Wiley-dominated topics</div>
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Topic</th>
+            <th class="num">Wiley works</th>
+            <th class="num">Market total</th>
+            <th class="num">Wiley share</th>
+            <th class="num">Market avg cites</th>
+            <th>Assessment</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="dimmed">
+            <td>Dementia &amp; Cognitive Impairment</td>
+            <td class="num">110</td>
+            <td class="num">130</td>
+            <td class="num warn-cell">85%</td>
+            <td class="num warn-cell">9.2</td>
+            <td class="warn-cell">Dominant, low yield</td>
+          </tr>
+          <tr class="dimmed">
+            <td>Alzheimer's Disease Research</td>
+            <td class="num">62</td>
+            <td class="num">73</td>
+            <td class="num warn-cell">85%</td>
+            <td class="num warn-cell">10.8</td>
+            <td class="warn-cell">Dominant, low yield</td>
+          </tr>
+          <tr class="dimmed">
+            <td>Innovations in Medical Education</td>
+            <td class="num">19</td>
+            <td class="num">24</td>
+            <td class="num">79%</td>
+            <td class="num warn-cell">2.7</td>
+            <td class="warn-cell">Dominant, very low yield</td>
+          </tr>
+          <tr class="dimmed">
+            <td>Neurological Disease Mechanisms</td>
+            <td class="num">18</td>
+            <td class="num">23</td>
+            <td class="num">78%</td>
+            <td class="num warn-cell">1.5</td>
+            <td class="warn-cell">Dominant, very low yield</td>
+          </tr>
+          <tr>
+            <td>Advanced Neuroimaging Techniques</td>
+            <td class="num">34</td>
+            <td class="num">68</td>
+            <td class="num">50%</td>
+            <td class="num">25.0</td>
+            <td style="color:#fbbf24">Balanced — watch</td>
+          </tr>
+          <tr class="highlight">
+            <td>Neural &amp; Behavioral Psychology</td>
+            <td class="num">17</td>
+            <td class="num">94</td>
+            <td class="num">18%</td>
+            <td class="num accent-cell">57.6</td>
+            <td class="good-cell">Underweight but high value</td>
+          </tr>
+          <tr class="highlight">
+            <td>Memory &amp; Neural Mechanisms</td>
+            <td class="num">20</td>
+            <td class="num">81</td>
+            <td class="num">25%</td>
+            <td class="num accent-cell">38.6</td>
+            <td class="good-cell">Good position</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="insight-box">
+      <div class="insight-box-title">The Dilution Formula</div>
+      <p>110 dementia papers at 9.2 average add 1,012 citations to Wiley's numerator but 110 papers to its denominator. If those same 110 papers instead averaged 25 citations (comparable to the Advanced Neuroimaging market average), Wiley's overall portfolio average would rise from 17.0 to approximately 19.7. The gap between 9.2 and 25 is the editorial opportunity — not in topic, but in quality selection, article format mix, and review commissioning within Alzheimer's and dementia research.</p>
+    </div>
+  </div>
+</section>
+
+<section id="stars">
+  <div class="container">
+    <p class="section-label">Hidden Stars</p>
+    <h2 class="section-title">The Core Portfolio That Wiley Needs to Lead With</h2>
+
+    <div class="prose">
+      <p>Strip away the dementia volume, and what remains is a genuinely strong neuroscience portfolio. Wiley's flagship neurology journals produce work that competes with anyone. The challenge is visibility — both externally, in how the portfolio is perceived, and internally, in how editorial resource is allocated across journals.</p>
+    </div>
+
+    <div class="chart-wrap">
+      <div class="chart-headline">Wiley's high-performing journals — hidden in the aggregate</div>
+      <div class="chart-subline">Selected Wiley journals, sorted by average citation density</div>
+      <div class="bar-chart">
+        <div class="bar-row">
+          <div class="bar-label">Annals of Neurology</div>
+          <div class="bar-track"><div class="bar-fill good" style="width:100%"></div></div>
+          <div class="bar-value">57.6 avg · 10 works · 4 reviews</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label">British J. of Pharmacology</div>
+          <div class="bar-track"><div class="bar-fill good" style="width:89%"></div></div>
+          <div class="bar-value">51.2 avg · 5 works · 3 reviews</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label">Angewandte Chemie Intl Ed</div>
+          <div class="bar-track"><div class="bar-fill good" style="width:80%"></div></div>
+          <div class="bar-value">46.3 avg · 11 works · 2 reviews</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label">Epilepsia</div>
+          <div class="bar-track"><div class="bar-fill" style="width:76%"></div></div>
+          <div class="bar-value">43.5 avg · 11 works · 4 reviews</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label">J. of Comparative Neurology</div>
+          <div class="bar-track"><div class="bar-fill" style="width:67%"></div></div>
+          <div class="bar-value">38.8 avg · 40 works · 7 reviews</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label">Clinical Pharmacology &amp; Ther.</div>
+          <div class="bar-track"><div class="bar-fill" style="width:61%"></div></div>
+          <div class="bar-value">35.0 avg · 8 works · 3 reviews</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label">Advanced Functional Materials</div>
+          <div class="bar-track"><div class="bar-fill" style="width:50%"></div></div>
+          <div class="bar-value">28.8 avg · 28 works · 0 reviews</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label">Advanced Science</div>
+          <div class="bar-track"><div class="bar-fill" style="width:43%"></div></div>
+          <div class="bar-value">24.7 avg · 31 works · 5 reviews</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="prose">
+      <p>Two patterns stand out. First, Wiley's materials science journals — Advanced Functional Materials (28.8 avg), Angewandte Chemie International Edition (46.3 avg), Small (19.2 avg, 12 works) — are showing up in neuroscience data not by accident, but because the field of neural engineering and brain-material interfaces is growing rapidly. These journals represent Wiley's natural position in a high-growth topic that no one else in this publisher set is covering with comparable depth.</p>
+      <p>Second, the review premium in Wiley's core neuroscience journals is substantial and consistent. Across the full portfolio, <strong>reviews average 63.1 citations versus 9.4 for articles</strong>. But only 14% of Wiley's neuroscience output is reviews — the same share as Elsevier, well below Springer's 45%. Epilepsia (4 reviews, 43.5 avg) and Annals of Neurology (4 reviews, 57.6 avg) demonstrate what Wiley's review capability looks like when deployed.</p>
+    </div>
+
+    <div class="callout success">
+      <span class="callout-icon">◆</span>
+      <p>Wiley's materials science journals represent a unique strategic asset: neural engineering at the intersection of materials chemistry and neuroscience. Advanced Functional Materials and Angewandte Chemie International Edition are appearing in neuroscience data because conducting polymer electrodes, fluorescent probes, and drug-delivery nanoparticles are now core neuroscience tools. This is Wiley's highest-growth adjacency, and it requires zero new journal acquisitions — the journals already exist.</p>
+    </div>
+  </div>
+</section>
+
+<section id="topics">
+  <div class="container">
+    <p class="section-label">Topic Analysis</p>
+    <h2 class="section-title">Dominant Where Returns Are Low, Thin Where They Are High</h2>
+
+    <div class="prose">
+      <p>The topic map for Wiley mirrors the journal map: high market share in the low-yield topics, underweight presence in the high-citation clusters. This is not a strategic choice — it is the structural consequence of allowing the Alzheimer's dementia volume to define the portfolio without a corresponding review-led, high-selectivity response in the same topic.</p>
+    </div>
+
+    <div class="two-col">
+      <div class="chart-wrap">
+        <div class="chart-headline">Where Wiley dominates (low citation yield)</div>
+        <div class="chart-subline">Wiley market share in dominated topics</div>
+        <div class="bar-chart" style="margin-top:1rem">
+          <div class="bar-row">
+            <div class="bar-label">Dementia &amp; Cog. Impairment</div>
+            <div class="bar-track"><div class="bar-fill warn" style="width:100%"></div></div>
+            <div class="bar-value">85% · 9.2 avg</div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label">Alzheimer's Disease</div>
+            <div class="bar-track"><div class="bar-fill warn" style="width:100%"></div></div>
+            <div class="bar-value">85% · 10.8 avg</div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label">Medical Education</div>
+            <div class="bar-track"><div class="bar-fill warn" style="width:93%"></div></div>
+            <div class="bar-value">79% · 2.7 avg</div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label">Neurological Disease Mech.</div>
+            <div class="bar-track"><div class="bar-fill warn" style="width:92%"></div></div>
+            <div class="bar-value">78% · 1.5 avg</div>
+          </div>
+        </div>
+      </div>
+      <div class="chart-wrap">
+        <div class="chart-headline">Where Wiley is thin (high citation yield)</div>
+        <div class="chart-subline">Wiley market share in high-value topics</div>
+        <div class="bar-chart" style="margin-top:1rem">
+          <div class="bar-row">
+            <div class="bar-label">Autism Spectrum Disorder</div>
+            <div class="bar-track"><div class="bar-fill" style="width:21%"></div></div>
+            <div class="bar-value">18% · 156.9 mkt avg</div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label">Mental Health Research</div>
+            <div class="bar-track"><div class="bar-fill" style="width:23%"></div></div>
+            <div class="bar-value">20% · 53.6 mkt avg</div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label">Neural &amp; Behavioral Psych.</div>
+            <div class="bar-track"><div class="bar-fill" style="width:18%"></div></div>
+            <div class="bar-value">18% · 57.6 mkt avg</div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label">Memory &amp; Neural Mechanisms</div>
+            <div class="bar-track"><div class="bar-fill" style="width:25%"></div></div>
+            <div class="bar-value">25% · 38.6 mkt avg</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="prose">
+      <p>The Alzheimer's &amp; Dementia position deserves nuance. <strong>Not all dementia publishing is low-value.</strong> In this dataset, Wiley's highest-cited dementia works include a critical stance piece on amyloid-targeting therapies at 16 citations, and a neurocardiology review at 22 citations. The signal within the noise confirms that the issue is not the topic — it is the article-type mix and selectivity threshold within the topic.</p>
+      <p>The neural engineering adjacency — where Advanced Functional Materials, Angewandte Chemie, and Advanced Science intersect with neuroscience — represents Wiley's most distinctive position in the dataset. No other publisher is covering brain-material interfaces at this scale. The question is whether this is being deliberated recognized and cultivated, or whether it is emerging organically without editorial strategy behind it.</p>
+    </div>
+
+    <div class="bubble-grid">
+      <div class="topic-bubble owned">Neural Engineering <span class="tip">Wiley: Advanced Functional Materials + Angewandte Chemie — unique position</span></div>
+      <div class="topic-bubble owned">Advanced Neuroimaging <span class="tip">Wiley: 50% share · 25.0 mkt avg — Medical Physics vehicle</span></div>
+      <div class="topic-bubble owned">Memory &amp; Neural Mechanisms <span class="tip">Wiley: 25% share · 38.6 mkt avg</span></div>
+      <div class="topic-bubble opportunity">Functional Brain Connectivity <span class="tip">Wiley: 27% share · 47.4 mkt avg — grow review content</span></div>
+      <div class="topic-bubble opportunity">Stress Responses &amp; Cortisol <span class="tip">High historical citation density — Wiley has 1 work in 2025</span></div>
+      <div class="topic-bubble missing">Autism Spectrum Disorder <span class="tip">Wiley: 18% share · 156.9 mkt avg — highest-citation topic</span></div>
+      <div class="topic-bubble missing">Mental Health Research <span class="tip">Wiley: 20% share · 53.6 mkt avg — underdeveloped</span></div>
+      <div class="topic-bubble missing">Genetics &amp; Neurodevelopment <span class="tip">Wiley: 12% share · 131.7 mkt avg — major gap</span></div>
+    </div>
+    <p style="font-family:var(--font-ui);font-size:0.72rem;color:var(--color-text-dim);margin-top:0.5rem">
+      <span style="color:var(--accent)">■</span> Wiley strength &nbsp;
+      <span style="color:#f87171">■</span> Underweight vs. citation potential &nbsp;
+      <span style="color:#4ade80">■</span> Growing opportunity
+    </p>
+  </div>
+</section>
+
+<section id="actions">
+  <div class="container">
+    <p class="section-label">Strategic Recommendations</p>
+    <h2 class="section-title">Three Moves to Unlock the Portfolio That Is Already There</h2>
+
+    <ul class="action-list">
+      <li class="action-item">
+        <div class="action-num">1</div>
+        <div class="action-text">
+          <strong>Shift Alzheimer's &amp; Dementia from volume publishing to high-selectivity, review-led debate publishing</strong>
+          <p>The 85% market share in dementia research is not a problem — it is an asset being operated incorrectly. The 16-citation Alzheimer's &amp; Dementia piece on amyloid therapy regulation, the highest-cited 2025 work in that journal, shows what is possible: a critical, high-controversy perspective that the entire field has to respond to. Commission 6–8 similar pieces annually: consensus statements, clinical guidelines, debate articles, regulatory-position reviews on aducanumab/lecanemab class therapies, and deep-dive mechanistic reviews on tau vs. amyloid debate. These articles will get cited. The routine research article in this topic will not. Selectivity, not volume, is the upgrade path.</p>
+        </div>
+      </li>
+      <li class="action-item">
+        <div class="action-num">2</div>
+        <div class="action-text">
+          <strong>Formally build a "Neural Engineering" editorial franchise around Advanced Functional Materials, Angewandte Chemie International Edition, and Advanced Science</strong>
+          <p>Wiley is the only publisher in this dataset with a materials science portfolio that is actively producing neuroscience-relevant work: conducting polymer electrodes (Advanced Functional Materials), fluorescent molecular probes, brain-computer interface materials, drug-delivery nanostructures. The average citation rate for these journals in this dataset is 28–46 citations per work. A formal editorial initiative — a named "Neural Engineering" commissioned article type, cross-promoted between the three journals — would concentrate this dispersed signal into a coherent high-impact product. This is a unique Wiley asset. No competitor can replicate it without acquiring chemistry journals.</p>
+        </div>
+      </li>
+      <li class="action-item">
+        <div class="action-num">3</div>
+        <div class="action-text">
+          <strong>Double review commissioning in Annals of Neurology, Epilepsia, and Journal of Comparative Neurology</strong>
+          <p>These three journals are performing at 38–58 citations per work — competitive with PLOS and approaching Springer levels. All three have review rates of 10–40%, below Springer's 45% benchmark. Wiley reviews overall average 63.1 citations, more than 6× the article average of 9.4. A systematic commissioning program for reviews in these journals — targeting topics where the journals have institutional authority (epilepsy genetics and precision medicine, comparative neuroanatomy of disease models, neurological disease mechanisms) — would shift the weight of the high-performing journal cohort upward and become visible in the portfolio average within two JIF cycles.</p>
+        </div>
+      </li>
+    </ul>
+
+    <div class="insight-box" style="margin-top:var(--space-lg)">
+      <div class="insight-box-title">The Wiley Thesis</div>
+      <p>Wiley is not a low-impact neuroscience publisher. It is a high-impact publisher with a volume problem. The stars — Annals of Neurology, British Journal of Pharmacology, Epilepsia, the materials science franchise — are buried in aggregate statistics by 172 dementia papers averaging 9.2 citations each. The path forward has two tracks running simultaneously: raise the floor by changing the article mix in the Alzheimer's/dementia domain, and raise the ceiling by investing more editorial capacity in the journals that are already performing. Both tracks are available. Neither requires a single new journal acquisition.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="report-footer">
+  <div class="container">
+    <p>Data: OpenAlex API, works published 2020–2026, publisher filter: Wiley. Analysis covers 929 neuroscience-related works across 60+ journals. Citation counts as of data pull date. · <a href="https://openalex.org">OpenAlex</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

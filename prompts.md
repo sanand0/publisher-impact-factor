@@ -1,5 +1,47 @@
 # Prompts
 
+## Narrate story, 11 May 2026
+
+<!--
+
+cd /home/sanand/code/publisher-impact-factor
+dev.sh
+claude --dangerously-skip-permissions --effort medium
+
+-->
+
+Write a narrative story for each of these publishers - Elsevier, Springer Nature, Wiley, Oxford University Press, PLOS - explaining how to improve their publisher impact factor in neuroscience based on the publication data available in data/openalex_mvp.duckdb as well as the insights from ./insights.md.
+
+You don't need to limit yourself to the insights in ./insights.md. You may delegate analyses to the AI coding agent codex, telling it to use the `data-analysis` skill, via `codex --yolo --model gpt-5.5 exec "prompts"` - it has excellent analysis skills.
+
+Some angles to explore might be:
+
+- who's going to your competition and where?
+- what trending topic are you not publishing on and what outdated topics are you still publishing on?
+- who are the trending funders and outdated funders in your domain?
+- which fading authors are you still publishing and which trending authors are you not publishing?
+
+However, these are naive angles. Plan like an expert. In this context, first think about:
+
+- What patterns would an expert in this field check / recognize that beginners would miss?
+- What questions would an expert ask that a beginner would not know to?
+- What problems / failures would an expert anticipate that beginners may not be aware of?
+- What powerful & relevant mental models would an expert apply in this context?
+
+Plan accordingly.
+
+Generate the output as a single page HTML data story (using the data-story skill) for each of the publishers. The file names should be: reports/neuroscience-{publisher-name, e.g. oup, springer-nature, elsevier, wiley, plos}-2026-05.html
+
+Make sure they use the same design - create and re-use styles in reports/style.css.
+Make sure they use a similar structure, but the content should be aimed at maximizing the insights for each publisher, you may structure accordingly. Use a template if that will help.
+
+Use sub-agents as required, token-efficiently.
+
+IMPORTANT: Because Claude will almost certainly stall when generating such a large file at one shot, break this into parts, generating the .html in chunks or layered edits (keeping each chunk small, max 100KB of edits) and saving it, checking it, then updating it with the next iteration, and so on.
+
+
+## Download OpenAlex data, 07 May 2026
+
 <!--
 
 cd /home/sanand/code/publisher-impact-factor
@@ -7,8 +49,6 @@ dev.sh
 codex
 
 -->
-
-## Download OpenAlex data, 07 Mar 2026
 
 <!-- Metaprompt: https://chatgpt.com/c/69fc23ad-b9c8-83ea-a6eb-13ced1a7c281 -->
 
@@ -95,3 +135,5 @@ Commit as you go (including .gitignore and prompts.md, which I'm editing).
 ---
 
 What command downloads all papers in the neuroscience topic for publishers: Elsevier, Springer Nature, Wiley, Oxford University Press, PLOS?
+
+<!-- codex resume 019e00ff-aef2-7eb2-820c-75c490bf3cad -->
