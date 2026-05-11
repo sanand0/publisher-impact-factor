@@ -230,7 +230,7 @@ p {
   margin-bottom: var(--space-sm);
   color: var(--color-text);
 }
-p:first-of-type::first-letter {
+.prose p:first-of-type::first-letter {
   font-size: 3.5em;
   font-weight: 700;
   float: left;
@@ -574,3 +574,157 @@ strong { color: #fff; font-weight: 600; }
   .bar-label { width: 120px; font-size: 0.72rem; }
   .nav-links { display: none; }
 }
+
+/* ── Theme Toggle Button ── */
+.theme-toggle {
+  background: none;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  color: var(--color-text-muted);
+  cursor: pointer;
+  padding: 0.38rem 0.48rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: color 0.2s, border-color 0.2s, background 0.2s;
+  line-height: 1;
+}
+.theme-toggle:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: var(--accent-muted);
+}
+
+/* ── Smooth theme transitions ── */
+body,
+.nav,
+.hero,
+.stat-card,
+.chart-wrap,
+.action-item,
+.insight-box,
+.callout,
+.data-table th,
+.data-table td,
+.topic-bubble,
+.topic-bubble .tip,
+.bar-track,
+.bar-fill,
+.pull-quote {
+  transition: background-color 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+p, strong, h1, h2, h3, h4,
+.stat-value, .stat-label, .stat-delta,
+.bar-value, .bar-label,
+.chart-headline, .chart-subline,
+.section-title, .section-label,
+.hero-title, .hero-deck, .hero-meta,
+.nav-brand, .nav-links a,
+.pull-quote, .insight-box-title,
+.action-text strong, .action-text p,
+.report-footer, .report-footer a {
+  transition: color 0.25s ease;
+}
+/* Suppress transitions while the page first loads (prevents flash) */
+.no-transition * { transition: none !important; }
+
+/* ══════════════════════════════════════════════════
+   LIGHT MODE
+   ══════════════════════════════════════════════════ */
+html[data-theme="light"] {
+  /* Base palette */
+  --color-bg: #f4f5fb;
+  --color-surface: #ffffff;
+  --color-surface-2: #e8eaf4;
+  --color-border: rgba(0,0,0,0.09);
+  --color-text: #111827;
+  --color-text-muted: #4b5064;
+  --color-text-dim: #9297b5;
+
+  /* Accent — picks up per-page --accent-light variable */
+  --accent: var(--accent-light, #3b5fd4);
+  --accent-muted: var(--accent-muted-light, rgba(59,95,212,0.1));
+  --accent-glow: var(--accent-glow-light, rgba(59,95,212,0.12));
+}
+
+/* Nav */
+html[data-theme="light"] .nav {
+  background: rgba(244,245,251,0.94);
+}
+
+/* Text elements that use hard-coded #fff */
+html[data-theme="light"] .hero-title,
+html[data-theme="light"] .section-title,
+html[data-theme="light"] .stat-value,
+html[data-theme="light"] .chart-headline,
+html[data-theme="light"] .pull-quote,
+html[data-theme="light"] strong,
+html[data-theme="light"] .bar-value {
+  color: var(--color-text);
+}
+
+/* Table rows */
+html[data-theme="light"] .data-table td {
+  border-bottom-color: rgba(0,0,0,0.05);
+}
+html[data-theme="light"] .data-table .highlight td {
+  color: var(--color-text);
+}
+
+/* Semantic colours — darker for legibility on light bg */
+html[data-theme="light"] .stat-delta.up   { color: #15803d; }
+html[data-theme="light"] .stat-delta.down { color: #dc2626; }
+html[data-theme="light"] .stat-delta.warn { color: #b45309; }
+html[data-theme="light"] .data-table .warn-cell { color: #dc2626; }
+html[data-theme="light"] .data-table .good-cell { color: #15803d; }
+
+/* Bar fills — dark enough to read text against a light track */
+html[data-theme="light"] .bar-fill.good { background: #15803d; }
+html[data-theme="light"] .bar-fill.warn { background: #dc2626; }
+html[data-theme="light"] .bar-fill.dim  {
+  background: #e2e4f0;
+  border-color: rgba(0,0,0,0.1);
+}
+
+/* Topic bubbles */
+html[data-theme="light"] .topic-bubble.missing {
+  background: rgba(220,38,38,0.07);
+  border-color: rgba(220,38,38,0.22);
+  color: #dc2626;
+}
+html[data-theme="light"] .topic-bubble.opportunity {
+  background: rgba(21,128,61,0.07);
+  border-color: rgba(21,128,61,0.22);
+  color: #15803d;
+}
+html[data-theme="light"] .topic-bubble .tip {
+  background: #ffffff;
+  color: var(--color-text);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
+
+/* Insight box border */
+html[data-theme="light"] .insight-box {
+  border-color: var(--color-border);
+}
+
+/* Subtle card depth on light bg */
+html[data-theme="light"] .stat-card,
+html[data-theme="light"] .chart-wrap,
+html[data-theme="light"] .action-item {
+  box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+}
+
+/* Tooltip shadows */
+html[data-theme="light"] .has-tip:hover .tip {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
+
+/* Callouts — slightly increased contrast on light */
+html[data-theme="light"] .callout.warn    { background: rgba(180,83,9,0.07); }
+html[data-theme="light"] .callout.danger  { background: rgba(220,38,38,0.07); }
+html[data-theme="light"] .callout.success { background: rgba(21,128,61,0.07); }
+html[data-theme="light"] .callout.warn    { border-left-color: #b45309; }
+html[data-theme="light"] .callout.danger  { border-left-color: #dc2626; }
+html[data-theme="light"] .callout.success { border-left-color: #15803d; }

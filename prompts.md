@@ -39,6 +39,21 @@ Use sub-agents as required, token-efficiently.
 
 IMPORTANT: Because Claude will almost certainly stall when generating such a large file at one shot, break this into parts, generating the .html in chunks or layered edits (keeping each chunk small, max 100KB of edits) and saving it, checking it, then updating it with the next iteration, and so on.
 
+---
+
+I renamed reports/ to docs/, added an MIT license, and published the docs/ folder at https://sanand0.github.io/publisher-impact-factor/
+
+Generate a landing page docs/index.html that explains the site and offers cards to link to each report, with a brief summary of the insight.
+
+There will be more reports in the future - refresh of neuroscience reports, new domains outside of neuroscience, and new publishers. Factor this in while designing the landing page and the individual report pages. (No need to create empty slots for these - just make sure it's designed and implemented extensibly.)
+
+Update README.md to begin with an introduction to the reports, linking to the landing page, and briefly explaining the methodology and insights.
+
+---
+
+Enable a dark and light mode toggle across all pages. Make sure the design works well in both modes.
+
+<!-- claude --resume 442aa100-0837-4721-aa38-d85851fb339f --dangerously-skip-permissions -->
 
 ## Download OpenAlex data, 07 May 2026
 
